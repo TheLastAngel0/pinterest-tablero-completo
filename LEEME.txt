@@ -1,0 +1,27 @@
+PINTEREST TABLERO COMPLETO
+==========================
+
+Instalación en Chrome:
+1. Descomprime Pinterest_Tablero_Completo.zip.
+2. Abre chrome://extensions en Chrome.
+3. Activa «Modo de desarrollador».
+4. Pulsa «Cargar descomprimida» y selecciona la carpeta Pinterest_Tablero_Completo que contiene manifest.json.
+
+Uso:
+1. Inicia sesión en Pinterest y abre el tablero que quieres guardar.
+2. Si el tablero muestra secciones, entra en «Todos los pines» o descarga cada sección por separado.
+3. Pulsa el icono de la extensión. Puedes indicar la cantidad de pines esperada, por ejemplo 250.
+4. Pulsa «Recorrer y descargar». Mantén abierta esa pestaña hasta que aparezca «Terminado».
+5. Busca los archivos en Descargas/Pinterest_Tablero_Completo/<tablero>/.
+6. Abre informe.json para comprobar pines encontrados, guardados y fallidos.
+
+Notas:
+- No tiene un límite de 50 pines. Recorre la página hasta que Pinterest deja de cargar pines.
+- Usa únicamente los pines que tu sesión puede ver.
+- Primero intenta la imagen original; si falla, usa la versión visible en el tablero.
+- Si Pinterest muestra un video MP4 directo, lo descarga. Si no expone ese archivo en el tablero, puede guardar solo la miniatura; el informe conserva el enlace del pin.
+- La cantidad descargada depende de lo que Pinterest cargue en la página. Si es inferior a la esperada, revisa secciones y vuelve a probar.
+- Si Chrome pregunta dónde guardar cada archivo, desactiva «Preguntar dónde se guardará cada archivo antes de descargarlo» en Configuración > Descargas antes de iniciar una descarga grande.
+- El proceso se detiene si cierras o recargas la pestaña del tablero.
+
+Esta extensión es independiente de Pinterest y de la extensión comercial enlazada.

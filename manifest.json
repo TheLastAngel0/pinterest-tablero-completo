@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Pinterest Tablero Completo",
+  "version": "1.0.0",
+  "description": "Recorre un tablero visible de Pinterest y descarga sus pines sin límite artificial.",
+  "permissions": ["activeTab", "downloads", "storage"],
+  "host_permissions": ["https://*.pinterest.com/*", "https://*.pinimg.com/*"],
+  "action": { "default_title": "Descargar tablero", "default_popup": "popup.html" },
+  "background": { "service_worker": "background.js" },
+  "content_scripts": [
+    {
+      "matches": ["https://*.pinterest.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

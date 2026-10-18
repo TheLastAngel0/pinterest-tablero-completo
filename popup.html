@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinterest Tablero Completo</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <h1>Tablero completo</h1>
+    <p id="page" class="muted">Abre un tablero de Pinterest.</p>
+    <label for="expected">Cantidad esperada <span class="muted">(opcional)</span></label>
+    <input id="expected" type="number" min="1" step="1" placeholder="Por ejemplo, 250">
+    <button id="start" disabled>Recorrer y descargar</button>
+    <button id="cancel" class="secondary" hidden>Detener</button>
+    <section id="progress" aria-live="polite">
+      <strong id="phase">Listo para comenzar</strong>
+      <div class="counts"><span id="found">0 encontrados</span><span id="saved">0 guardados</span></div>
+      <div class="counts"><span id="failed">0 fallidos</span><span id="scrolls">0 pasos</span></div>
+      <p id="detail" class="muted"></p>
+    </section>
+    <p class="note">Mantén abierta la pestaña del tablero hasta que termine. Los archivos se guardan en Descargas/Pinterest_Tablero_Completo/.</p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
